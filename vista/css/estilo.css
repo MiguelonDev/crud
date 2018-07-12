@@ -1,0 +1,69 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+h1{
+	text-align:center;
+}
+
+body{
+	background-color:#c0c0c0;
+}
+
+footer{
+	 background-color: black;
+ 	 position: absolute;
+	 bottom: 0;
+ 	 width: 100%;
+ 	 height: 40px;
+ 	 color: white;
+}
+
+thead th{
+    
+	font-size:1.5em;
+	text-decoration:underline;
+	background-color:#FC3;
+	border-color:#FC3;
+}
+
+tbody{
+	background-color: #ffff00;
+	text-align: left;
+	border: 1px #000099 dotted;
+
+}
+ul{
+	text-align: left;
+	color : red;
+	margin: auto;
+	border: 1px #000099 dotted;
+	
+	width: 600px;
+	background-color:#FC3;
+}
+
+.tabla{
+	margin: auto;	
+}
+
+.boton, .boton_ayuda{
+	width: 100px !important;
+}
+
+#ayuda{
+	background:red;
+}
+
+.error{
+	font-size: 2.5em;
+	background-color:#ff0000;
+}
+
+.centrar{
+	text-align: center;
+}
