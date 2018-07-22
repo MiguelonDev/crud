@@ -1,6 +1,6 @@
 <?php
 /*
- * Documento principal de la aplicacion que contiene la estructura básica html y la tabla de consulta
+ * Documento principal de la aplicacion que contiene la estructura bï¿½sica html y la tabla de consulta
  * de la base de datos con la que se trabaja
  * 
  * 
@@ -23,9 +23,9 @@
 <script>
 
 /*
- * Función que se ejecuta al pulsar en un elemento de etiqueta "a"
- * y que carga en el "div" #accion el código correspondiente al
- * documento recibido en el parámetro "href"
+ * Funciï¿½n que se ejecuta al pulsar en un elemento de etiqueta "a"
+ * y que carga en el "div" #accion el cï¿½digo correspondiente al
+ * documento recibido en el parï¿½metro "href"
  */
 
 $(document).ready(
@@ -48,7 +48,7 @@ $(document).ready(
 
     try {
         
-        //Crea la conexión
+        //Crea la conexiï¿½n
         $conn = connect();
         
         
@@ -65,12 +65,12 @@ $(document).ready(
                         
                             <th>Nombre</th>
                             <th>Apellidos</th>
-                            <th>Teléfono</th>
+                            <th>Telï¿½fono</th>
                             <th colspan=2>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>';
-            // bucle que se encarga de crear la tabla de datos en función de los registros encontrados
+            // bucle que se encarga de crear la tabla de datos en funciï¿½n de los registros encontrados
             foreach ($rows as $row) {            
                 echo '
                       <tr> 
@@ -86,7 +86,7 @@ $(document).ready(
                       <tr>
                           <td><input type="text" name="nom" id="nom" placeholder="Nombre"></td>
                           <td><input type="text" name="ape" id="dir" placeholder="Apellidos"></td>
-                          <td><input type="text" name="tel" id="tel" placeholder="Teléfono"></input></td>
+                          <td><input type="text" name="tel" id="tel" placeholder="Telï¿½fono"></input></td>
                           <td><input class="boton" value="Insertar" type="submit"/></td>
                           <td><a id="ayuda" href="vista/ayuda.html"><input type="button" class="boton" name="ayuda" id="ayuda" value="Ayuda"></a></td>
                       </tr>
@@ -102,7 +102,7 @@ $(document).ready(
         
             echo '<script>';
             echo 'alert("No se ha podido conectar con la BBDD");';
-            echo 'window.location = "http://localhost/MiguelAguirre/index.php";';
+            echo 'window.location = "http://localhost/Crud/index.php";';
             echo '</script>';
     }
 ?>

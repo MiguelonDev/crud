@@ -2,9 +2,9 @@
 
 /*
  * Documento php que se invoca al pulsar el boton "borrar" de cada fila y que
- * cargará en el formulario los datos del registro a borrar
+ * cargarï¿½ en el formulario los datos del registro a borrar
  * 
- * Una vez se pulse en el botón "Aceptar", se eliminará ese registro de la BBDD
+ * Una vez se pulse en el botï¿½n "Aceptar", se eliminarï¿½ ese registro de la BBDD
  * mostrando un aviso al usuario mediante alerta JavaScript y volviendo a la pantalla principal
  */
 
@@ -18,7 +18,7 @@ $conn = null;
     
     if(!isset($_POST['delete'])){
         try {
-            //Crea la conexión
+            //Crea la conexiï¿½n
         $conn = connect();
         
         
@@ -57,7 +57,7 @@ $conn = null;
              </form>                   
              ';
         }catch (Exception $e){
-            echo 'alert("No se ha borrado por un fallo de conexión a base de datos")';
+            echo 'alert("No se ha borrado por un fallo de conexiï¿½n a base de datos")';
         }
         
     }else{
@@ -66,12 +66,12 @@ $conn = null;
         if($resul){
             echo "<script>";
             echo 'alert("Se ha borrado el registro");';
-            echo 'window.location = "http://localhost/MiguelAguirre/index.php";';
+            echo 'window.location = "http://localhost/Crud/index.php";';
             echo "</script>";
         }else{
             echo "<script>";
-            echo 'alert("Nada que borrar, seleccione un usuario válido mediante el formulario");';
-            echo 'window.location = "http://localhost/MiguelAguirre/index.php";';
+            echo 'alert("Nada que borrar, seleccione un usuario v&aacutelido mediante el formulario");';
+            echo 'window.location = "http://localhost/Crud/index.php";';
             echo "</script>";
         }
     }

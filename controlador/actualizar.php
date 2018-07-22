@@ -2,14 +2,14 @@
 
 /*
  * Documento php que se invoca al pulsar el boton "actualizar" de cada fila y que 
- * cargará en el formulario los datos del registro a actualizar
+ * cargarï¿½ en el formulario los datos del registro a actualizar
  * 
- * Al hacer las comprobaciones de actualización, se verificará que al menos uno de 
- * los campos ha sido alterado comparándolo con el registro original
+ * Al hacer las comprobaciones de actualizaciï¿½n, se verificarï¿½ que al menos uno de 
+ * los campos ha sido alterado comparï¿½ndolo con el registro original
  * 
- * Se tendrán en cuenta las longitudes de los campos y su contenido para mantener 
- * la lógica de base de datos conforme a unos criterios básicos (los nombres y apellidos
- * no contienen numeros y los teléfonos no contienen letras, así como ninguno contiene otros caracteres)
+ * Se tendrï¿½n en cuenta las longitudes de los campos y su contenido para mantener 
+ * la lï¿½gica de base de datos conforme a unos criterios bï¿½sicos (los nombres y apellidos
+ * no contienen numeros y los telï¿½fonos no contienen letras, asï¿½ como ninguno contiene otros caracteres)
  * 
  */
 
@@ -28,7 +28,7 @@ echo '
         
         try {
             
-            //Crea la conexión
+            //Crea la conexiï¿½n
             $conn = connect();
                        
             $data = getById($conn, $_GET['ID']);
@@ -82,18 +82,18 @@ echo '
             if($res === true){
                 echo '<script>';
                 echo 'alert("Se ha actualizado el registro");';
-                echo 'window.location = "http://localhost/MiguelAguirre/index.php";';
+                echo 'window.location = "http://localhost/Crud/index.php";';
                 echo '</script>';
             }else{
                 
                 echo '<script>';
-                echo 'alert("No se han podido persistir los cambios por alguna de las siguientes razones:\n\n\t- El registro no ha cambiado\n\t- El registro actualizado no existe en BBDD\n\t- La conexión de BBDD ha fallado");';
+                echo 'alert("No se han podido persistir los cambios por alguna de las siguientes razones:\n\n\t- El registro no ha cambiado\n\t- El registro actualizado no existe en BBDD\n\t- La conexiï¿½n de BBDD ha fallado");';
                 echo 'history.back();';
                 echo '</script>';
             }
         }else{
             echo '<script>';
-            echo 'alert("No se han podido persistir los cambios por alguna de las siguientes razones:\n\n\t- El registro no ha cambiado\n\t- El registro actualizado no existe en BBDD\n\t- La conexión de BBDD ha fallado");';
+            echo 'alert("No se han podido persistir los cambios por alguna de las siguientes razones:\n\n\t- El registro no ha cambiado\n\t- El registro actualizado no existe en BBDD\n\t- La conexiï¿½n de BBDD ha fallado");';
             echo 'history.back();';
             echo '</script>';
         }
